@@ -7,15 +7,21 @@
 
 <style>
 body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f172a;color:white}
-header{padding:60px 20px;text-align:center;background:#020617}
-h1{font-size:48px;margin-bottom:10px}
-h2{text-align:center;margin-bottom:30px}
-p{line-height:1.6}
-section{padding:60px 20px;max-width:1100px;margin:auto}
+header{padding:80px 20px;text-align:center;background:linear-gradient(180deg,#020617,#0f172a)}
+
+h1{font-size:52px;margin-bottom:10px;letter-spacing:2px}
+
+h2{text-align:center;margin-bottom:30px;font-size:32px}
+
+p{line-height:1.6;opacity:.9}
+
+section{padding:70px 20px;max-width:1100px;margin:auto}
 
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
 
-.card{background:#1e293b;padding:25px;border-radius:12px;box-shadow:0 10px 20px rgba(0,0,0,0.2)}
+.card{background:#1e293b;padding:25px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.25);transition:transform .2s}
+
+.card:hover{transform:translateY(-6px)}
 
 .btn{
 background:#22c55e;
@@ -30,43 +36,29 @@ margin-top:20px
 
 .btn:hover{opacity:.85}
 
+.hero-buttons{margin-top:25px}
+
 .plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
 
-.plan{background:#1e293b;padding:30px;border-radius:12px;text-align:center}
+.plan{background:#1e293b;padding:30px;border-radius:12px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.25)}
 
 .price{font-size:28px;margin:15px 0;color:#22c55e}
 
-.socials{
-margin-top:30px;
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap
-}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:25px}
 
-.socials a{
-background:#1e293b;
-padding:12px 18px;
-border-radius:8px;
-text-decoration:none;
-color:white;
-font-size:14px
-}
+.step{background:#1e293b;padding:25px;border-radius:10px;text-align:center}
+
+.socials{margin-top:30px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
+
+.socials a{background:#1e293b;padding:12px 18px;border-radius:8px;text-decoration:none;color:white;font-size:14px}
+
+form{max-width:500px;margin:auto;display:flex;flex-direction:column;gap:15px}
+
+input,textarea{padding:12px;border-radius:6px;border:none}
 
 footer{text-align:center;padding:40px;background:#020617;margin-top:40px}
 
-.whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:14px 18px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-box-shadow:0 5px 15px rgba(0,0,0,0.3)
-}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 5px 15px rgba(0,0,0,0.3)}
 
 </style>
 </head>
@@ -77,7 +69,11 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3)
 <h1>NEXORA</h1>
 <p>Customer Communication Agency</p>
 <p>Gestionamos WhatsApp, redes sociales y marketplaces para que tu empresa venda más.</p>
-<a class="btn" href="#contacto">Contactar</a>
+
+<div class="hero-buttons">
+<a class="btn" href="#contacto">Solicitar información</a>
+<a class="btn" href="#planes">Ver planes</a>
+</div>
 </header>
 
 <section>
@@ -109,6 +105,34 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3)
 </section>
 
 <section>
+<h2>Cómo trabajamos</h2>
+
+<div class="steps">
+
+<div class="step">
+<h3>1</h3>
+<p>Analizamos los canales de comunicación de tu empresa.</p>
+</div>
+
+<div class="step">
+<h3>2</h3>
+<p>Configuramos los procesos de atención al cliente.</p>
+</div>
+
+<div class="step">
+<h3>3</h3>
+<p>Nuestro equipo gestiona las consultas diariamente.</p>
+</div>
+
+<div class="step">
+<h3>4</h3>
+<p>Tu empresa mejora la atención y aumenta las ventas.</p>
+</div>
+
+</div>
+</section>
+
+<section id="planes">
 <h2>Planes</h2>
 
 <div class="plans">
@@ -141,18 +165,52 @@ box-shadow:0 5px 15px rgba(0,0,0,0.3)
 </div>
 </section>
 
+<section>
+<h2>Por qué elegir Nexora</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Respuesta rápida</h3>
+<p>Las empresas que responden primero venden más.</p>
+</div>
+
+<div class="card">
+<h3>Equipo especializado</h3>
+<p>Profesionales en atención digital y comunicación con clientes.</p>
+</div>
+
+<div class="card">
+<h3>Escalable</h3>
+<p>El servicio se adapta al crecimiento de tu empresa.</p>
+</div>
+
+<div class="card">
+<h3>Más ventas</h3>
+<p>Mejor atención significa más oportunidades de venta.</p>
+</div>
+
+</div>
+</section>
+
 <section id="contacto">
 <h2>Contacto</h2>
 
-<p>Email: contacto@nexora.agency</p>
-<p>WhatsApp: +54 9 11 0000 0000</p>
+<form>
+<input type="text" placeholder="Nombre" required>
+<input type="email" placeholder="Email" required>
+<textarea rows="4" placeholder="Mensaje"></textarea>
+<button class="btn">Enviar</button>
+</form>
 
 <div class="socials">
-<a href="#">Instagram</a>
+<a href="#">Instagram</a>https://www.instagram.com/nexora.agency.customer/
 <a href="#">LinkedIn</a>
 <a href="#">Facebook</a>
 <a href="#">WhatsApp</a>
 </div>
+
+<p style="text-align:center;margin-top:25px">Email: contacto@nexora.agency</p>
 
 </section>
 
