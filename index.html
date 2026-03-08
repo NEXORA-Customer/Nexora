@@ -3,32 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nexora | Atención Digital para Empresas</title>
+<title>Nexora | Customer Communication Agency</title>
+
 <style>
 body{font-family:Arial,Helvetica,sans-serif;margin:0;background:#0f172a;color:white}
-header{padding:40px;text-align:center;background:#020617}
-header h1{font-size:42px;margin:0}
-header p{opacity:.8}
+header{padding:60px 20px;text-align:center;background:#020617}
+h1{font-size:48px;margin-bottom:10px}
+h2{text-align:center;margin-bottom:30px}
+p{line-height:1.6}
 section{padding:60px 20px;max-width:1100px;margin:auto}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-.card{background:#1e293b;padding:25px;border-radius:10px}
-.card h3{margin-top:0}
-.cta{background:#22c55e;color:#020617;padding:15px 25px;border-radius:8px;text-decoration:none;font-weight:bold}
-footer{text-align:center;padding:30px;background:#020617;opacity:.8}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+
+.card{background:#1e293b;padding:25px;border-radius:12px;box-shadow:0 10px 20px rgba(0,0,0,0.2)}
+
+.btn{
+background:#22c55e;
+color:#020617;
+padding:14px 26px;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+margin-top:20px
+}
+
+.btn:hover{opacity:.85}
+
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+
+.plan{background:#1e293b;padding:30px;border-radius:12px;text-align:center}
+
+.price{font-size:28px;margin:15px 0;color:#22c55e}
+
+.socials{
+margin-top:30px;
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap
+}
+
+.socials a{
+background:#1e293b;
+padding:12px 18px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-size:14px
+}
+
+footer{text-align:center;padding:40px;background:#020617;margin-top:40px}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3)
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
 <h1>NEXORA</h1>
-<p>Gestión profesional de WhatsApp, redes sociales y marketplaces para empresas.</p>
-<br>
-<a class="cta" href="#contacto">Contactar</a>
+<p>Customer Communication Agency</p>
+<p>Gestionamos WhatsApp, redes sociales y marketplaces para que tu empresa venda más.</p>
+<a class="btn" href="#contacto">Contactar</a>
 </header>
 
 <section>
 <h2>Servicios</h2>
+
 <div class="grid">
+
 <div class="card">
 <h3>Atención WhatsApp</h3>
 <p>Respondemos consultas de clientes en tiempo real para que tu empresa no pierda ventas.</p>
@@ -36,40 +92,76 @@ footer{text-align:center;padding:30px;background:#020617;opacity:.8}
 
 <div class="card">
 <h3>Redes Sociales</h3>
-<p>Atendemos mensajes de Instagram, Facebook y comentarios comerciales.</p>
+<p>Gestionamos mensajes de Instagram, Facebook y comentarios comerciales.</p>
 </div>
 
 <div class="card">
-<h3>Mercado Libre</h3>
-<p>Gestión de preguntas, ventas y seguimiento de clientes dentro del marketplace.</p>
+<h3>Marketplaces</h3>
+<p>Atención de preguntas, seguimiento de ventas y gestión de clientes.</p>
 </div>
 
 <div class="card">
-<h3>Atención Postventa</h3>
-<p>Seguimiento profesional para mejorar la experiencia del cliente.</p>
+<h3>Postventa</h3>
+<p>Seguimiento profesional de clientes para mejorar la experiencia de compra.</p>
 </div>
+
 </div>
 </section>
 
 <section>
-<h2>Por qué elegirnos</h2>
-<div class="grid">
-<div class="card">Respuesta rápida a clientes</div>
-<div class="card">Equipo especializado en ventas</div>
-<div class="card">Disponibilidad empresarial</div>
-<div class="card">Escalable para empresas en crecimiento</div>
+<h2>Planes</h2>
+
+<div class="plans">
+
+<div class="plan">
+<h3>Start</h3>
+<div class="price">USD 150 / mes</div>
+<p>Atención WhatsApp</p>
+<p>Respuestas a consultas</p>
+<p>Horario comercial</p>
+</div>
+
+<div class="plan">
+<h3>Business</h3>
+<div class="price">USD 300 / mes</div>
+<p>WhatsApp</p>
+<p>Instagram / Facebook</p>
+<p>Seguimiento clientes</p>
+</div>
+
+<div class="plan">
+<h3>Pro</h3>
+<div class="price">USD 500 / mes</div>
+<p>WhatsApp</p>
+<p>Redes sociales</p>
+<p>Marketplaces</p>
+<p>Postventa</p>
+</div>
+
 </div>
 </section>
 
 <section id="contacto">
 <h2>Contacto</h2>
-<p>WhatsApp: +54 9 11 0000 0000</p>
+
 <p>Email: contacto@nexora.agency</p>
+<p>WhatsApp: +54 9 11 0000 0000</p>
+
+<div class="socials">
+<a href="#">Instagram</a>
+<a href="#">LinkedIn</a>
+<a href="#">Facebook</a>
+<a href="#">WhatsApp</a>
+</div>
+
 </section>
 
 <footer>
-<p>© 2026 Nexora - Atención Digital Empresarial</p>
+<p>© 2026 Nexora - Customer Communication Agency</p>
+<p>Atención digital para empresas en todo el mundo</p>
 </footer>
+
+<a class="whatsapp" href="https://wa.me/5491100000000" target="_blank">WhatsApp</a>
 
 </body>
 </html>
